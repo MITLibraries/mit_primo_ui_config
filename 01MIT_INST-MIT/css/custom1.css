@@ -866,3 +866,27 @@ md-list.prm-list.prm-linkable-list-items .md-button.arrow-link-button md-list-it
 /* Hides left toolbar */
 div.services-index-under {display:none;}
 
+  /*-------- TOP NAV BAR -------------------------*/
+
+  /* Ask Us Button */
+  #ask-us-mit a {
+    color: #dedede;
+    display: flex;
+    fill: #dedede;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 50%;
+    padding: .5em;
+    transition: box-shadow .4s cubic-bezier(.25,.8,.25,1),background-color .4s cubic-bezier(.25,.8,.25,1);
+}
+
+#ask-us-mit a:hover {
+    color: #53738c;
+    fill: #53738c;
+    background: white;
+}
+
+div#ask-us-mit {
+    margin: .5em;
+}
