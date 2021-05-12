@@ -1,0 +1,16 @@
+name: Create Zip
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: 01MIT_INST-MIT
+        path: |
+          .
+          !README.md
+          !.*
