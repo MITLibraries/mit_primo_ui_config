@@ -1,0 +1,12 @@
+name: Create Zip
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Archive Release
+      uses: thedoctor0/zip-release@master
+      with:
+        filename: '01MIT_INST-MIT.zip'
+        path: '01MIT_INST-MIT'
