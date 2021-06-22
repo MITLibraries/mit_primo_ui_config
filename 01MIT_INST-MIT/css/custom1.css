@@ -890,3 +890,25 @@ div.services-index-under {display:none;}
 div#ask-us-mit {
     margin: .5em;
 }
+
+/*----- add title after logo -----*/
+div#title-mit {
+  color: hsla(0,0%,100%,.85);
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 25px;
+}
+
+prm-topbar prm-logo {
+  display: flex;
+  align-items: center;
+  max-width: initial;
+}
+
+.top-nav-bar.layout-row {
+  flex-wrap: wrap;
+}
+
+.top-nav-bar.layout-row>.flex-50 {
+  flex-basis: auto;
+}
