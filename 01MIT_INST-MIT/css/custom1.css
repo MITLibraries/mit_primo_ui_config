@@ -923,3 +923,8 @@ prm-search-bookmark-filter {
     height: 100%;
     margin-right: -.1em;
 }
+/*-------- LOGIN PAGE ---------------*/
+/* Fixes color contrast issue */
+prm-stand-alone-login > div.layout-fill {
+  background-color: #333;
+}
