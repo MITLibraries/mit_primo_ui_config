@@ -7,5 +7,57 @@
     })
     .component('prmLogoAfter', {
         template: '<div id="title-mit"><a href="https://mit.primo.exlibrisgroup.com/discovery/search?vid=01MIT_INST:MIT&lang=en">Search Our Collections</a></div>'
+    })
+    .controller('prmNoSearchResultAfterController', [function () {
+        var vm = this;
+        vm.getSearchTerm = getSearchTerm;
+        function getSearchTerm() {
+            return vm.parentCtrl.term;
+        }
+    }
+    ])
+    .component('prmNoSearchResultAfter', {
+        bindings: {
+            parentCtrl: '<'
+        },
+        controller: 'prmNoSearchResultAfterController',
+        template: '<md-card class="default-card zero-margin _md md-primoExplore-theme">\
+    <md-card-title>\
+      <md-card-title-text>\
+        <span translate="" class="md-headline ng-scope">No records found.</span>\
+      </md-card-title-text>\
+    </md-card-title>\
+    <md-card-content>\
+      <p><span>There are no results matching your search: <i>{{$ctrl.getSearchTerm()}}</i>. </span></p>\
+      <p><span translate="" class="bold-text ng-scope">Common troubleshooting:</span></p>\
+      <ul>\
+        <li translate="" class="ng-scope">Make sure that all words are spelled correctly, and no abbreviations are used</li>\
+        <li translate="" class="ng-scope">Log in to ensure access to all materials.</li>\
+        <li translate="" class="ng-scope">Try different keywords, more general keywords, or fewer keywords.</li>\
+        <li>Select "<a href="https://search.lib.buffalo.edu/discovery/search?vid=01SUNY_BUF:everything&tab=EverythingUBSUNY&search_scope=UBSUNY&mode=basic&displayMode=full&bulkSize=10&highlight=true&dum=true&query=any,contains,{{$ctrl.getSearchTerm()}}&displayField=all&pcAvailabiltyMode=true&pcAvailability=true" target="_self">Expand my results</a>" to include articles outside of UB\'s full text online holdings available for request via Delivery+.</li>\
+        <li translate="" class="ng-scope">If your original search specified a field, try another search without selecting a field.</li>\
+        <li translate="" class="ng-scope">If your original search was filtered, try clearing your filters to improve your results.</li>\
+        </ul>\
+      <p><span translate="" class="bold-text ng-scope">Try a different search scope:</span></p>\
+      <ul>\
+        <li><a href="https://search.lib.buffalo.edu/discovery/search?vid=01SUNY_BUF:everything&tab=EverythingUBSUNY&search_scope=UBSUNY&mode=basic&displayMode=full&bulkSize=10&highlight=true&dum=true&query=any,contains,{{$ctrl.getSearchTerm()}}&displayField=all&pcAvailabiltyMode=true" target="_self">Everything UB + SUNY</a> - materials owned by UB and SUNY, and print and electronic articles available at UB;</li>\
+        <li><a href="https://search.lib.buffalo.edu/discovery/search?vid=01SUNY_BUF:everything&tab=Everything&search_scope=MyInst_and_CI&mode=basic&displayMode=full&bulkSize=10&highlight=true&dum=true&query=any,contains,{{$ctrl.getSearchTerm()}}&displayField=all&pcAvailabiltyMode=true" target="_self">Everything UB</a> - materials owned by UB, including articles;</li>\
+        <li><a href="https://search.lib.buffalo.edu/discovery/search?vid=01SUNY_BUF:everything&tab=OnlineResources&search_scope=OnlineResources&mode=basic&displayMode=full&bulkSize=10&highlight=true&dum=true&query=any,contains,{{$ctrl.getSearchTerm()}}&displayField=all&pcAvailabiltyMode=true" target="_self">Online Resources</a> - materials available online, including articles, ebooks, and more;</li>\
+        <li><a href="https://search.lib.buffalo.edu/discovery/search?vid=01SUNY_BUF:everything&tab=LibraryCatalog&search_scope=MyInstitution&mode=basic&displayMode=full&bulkSize=10&highlight=true&dum=true&query=any,contains,{{$ctrl.getSearchTerm()}}&displayField=all&pcAvailabiltyMode=true" target="_self">Library Catalog</a> - materials owned by UB, excluding articles;</li>\
+        <li><a href="https://search.lib.buffalo.edu/discovery/search?vid=01SUNY_BUF:everything&tab=CentralIndex&search_scope=CentralIndex&mode=basic&displayMode=full&bulkSize=10&highlight=true&dum=true&query=any,contains,{{$ctrl.getSearchTerm()}}&displayField=all&pcAvailabiltyMode=true" target="_self">Articles</a> - print and electronic articles available at UB;</li>\
+        <li><a href="https://search.lib.buffalo.edu/discovery/search?vid=01SUNY_BUF:everything&tab=NEWSUNY&search_scope=NewDiscoveryNetwork&mode=basic&displayMode=full&bulkSize=10&highlight=true&dum=true&query=any,contains,{{$ctrl.getSearchTerm()}}&displayField=all&pcAvailabiltyMode=true" target="_self">SUNY Catalog</a> - materials owned by UB and SUNY, excluding articles;</li>\
+        <li><a href="https://search.lib.buffalo.edu/discovery/search?vid=01SUNY_BUF:everything&tab=UBSUNYPLUS&search_scope=UBSUNYPLUS&mode=basic&displayMode=full&bulkSize=10&highlight=true&dum=true&query=any,contains,{{$ctrl.getSearchTerm()}}&displayField=all&pcAvailabiltyMode=true" target="_self">Everything UB + SUNY + WorldCat</a> - materials owned by UB and SUNY, articles owned by UB, and records in the WorldCat database;</li>\
+        <li><a href="https://search.lib.buffalo.edu/discovery/npsearch?vid=01SUNY_BUF:everything&search_scope=all&query=any,contains,{{$ctrl.getSearchTerm()}}&pcAvailabiltyMode=true" target="_self">Newspapers Search</a> - newspaper articles owned by UB.</li>\
+      </ul>\
+      <p><span translate="" class="bold-text ng-scope">Need more help?</span></p>\
+      <ul>\
+        <li>Chat now with a librarian by clicking "<strong>Chat with us</strong>" on the right or consult our <a href="https://research.lib.buffalo.edu/search-tips/everything-help">Search Tips and Videos</a>.</li>\
+      </ul>\
+    </md-card-content>\
+    </md-card>'
     });
 })();
+
+
+
+ 
