@@ -21,23 +21,26 @@
             parentCtrl: '<'
         },
         controller: 'prmNoSearchResultAfterController',
-        template: '<md-card class="default-card zero-margin _md md-primoExplore-theme">\
-    <md-card-title>\
-      <md-card-title-text>\
-        <span translate="" class="md-headline ng-scope">No records found.</span>\
-      </md-card-title-text>\
-    </md-card-title>\
-    <md-card-content>\
-      <p><span>There are no results matching your search: <i>{{$ctrl.getSearchTerm()}}</i>. </span></p>\
-      <p><span translate="" class="bold-text ng-scope">Common troubleshooting:</span></p>\
-      <ul>\
-        <li translate="" class="ng-scope">Make sure that all words are spelled correctly, and no abbreviations are used</li>\
-        <li translate="" class="ng-scope">Log in to ensure access to all materials.</li>\
-        <li translate="" class="ng-scope">Try different keywords, more general keywords, or fewer keywords.</li>\
-        <li translate="" class="ng-scope">Try searching <a href="https://mit.on.worldcat.org/search?queryString={{$ctrl.getSearchTerm()}}">Worldcat</a>.</li>\
-        </ul>\
-    </md-card-content>\
-    </md-card>'
+        template: `
+        <md-card class="default-card zero-margin _md md-primoExplore-theme">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Oops, no records found! Let's keep digging...</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <p><span class="bold-text">No results matching "{{$ctrl.getSearchTerm()}}". Is the spelling correct?</span></p>
+                <p><span >More options:</span></p>
+                    <ul>
+                        <li>Articles: Select the "Expand search beyond MIT subscriptions" checkbox in the sidebar, or request via <a href="https://libraries.mit.edu/illiad">ILB/ILLiad</a>. If you have not already logged in, doing so may retrieve more results.</li>
+                        <li>Books, physical materials: Request via BorrowDirect/InterLibrary Borrowing (ILB) by finding the item in <a href="https://mit.on.worldcat.org/search?queryString={{$ctrl.getSearchTerm()}}">WorldCat</a>.</li>
+                        <li>Archives and manuscripts: Search and request via <a href="http://archivesspace.mit.edu/">ArchivesSpace</a>.</li>
+                        <li><a href="https://libraries.mit.edu/suggest-purchase">Suggest a purchase</a>.</li>
+                        <li><a href="https://libraries.mit.edu/ask">Ask Us</a> for more help!</li>
+                    </ul>
+            </md-card-content>
+        </md-card>
+        `
     });
 })();
 
