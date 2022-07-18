@@ -7,5 +7,43 @@
     })
     .component('prmLogoAfter', {
         template: '<div id="title-mit"><a href="https://mit.primo.exlibrisgroup.com/discovery/search?vid=01MIT_INST:MIT&lang=en">Search Our Collections</a></div>'
+    })
+    .controller('prmNoSearchResultAfterController', [function () {
+        var vm = this;
+        vm.getSearchTerm = getSearchTerm;
+        function getSearchTerm() {
+            return vm.parentCtrl.term;
+        }
+    }
+    ])
+    .component('prmNoSearchResultAfter', {
+        bindings: {
+            parentCtrl: '<'
+        },
+        controller: 'prmNoSearchResultAfterController',
+        template: `
+        <md-card class="default-card zero-margin _md md-primoExplore-theme">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Oops, no records found! Let's keep digging...</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <p><span class="bold-text">No results matching "{{$ctrl.getSearchTerm()}}". Is the spelling correct?</span></p>
+                <p><span >More options:</span></p>
+                    <ul>
+                        <li>Articles: Select the "Expand search beyond MIT subscriptions" checkbox in the sidebar, or request via <a href="https://libraries.mit.edu/illiad">ILB/ILLiad</a>. If you have not already logged in, doing so may retrieve more results.</li>
+                        <li>Books, physical materials: Request via BorrowDirect/InterLibrary Borrowing (ILB) by finding the item in <a href="https://mit.on.worldcat.org/search?queryString={{$ctrl.getSearchTerm()}}">WorldCat</a>.</li>
+                        <li>Archives and manuscripts: Search and request via <a href="http://archivesspace.mit.edu/">ArchivesSpace</a>.</li>
+                        <li><a href="https://libraries.mit.edu/suggest-purchase">Suggest a purchase</a>.</li>
+                        <li><a href="https://libraries.mit.edu/ask">Ask Us</a> for more help!</li>
+                    </ul>
+            </md-card-content>
+        </md-card>
+        `
     });
 })();
+
+
+
+ 
