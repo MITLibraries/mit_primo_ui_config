@@ -936,3 +936,21 @@ prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
 prm-no-search-result > md-card {
   display:none;
 }
+
+/*------- Favorites Warning Message for Guests ------- */
+prm-favorites-warning-message .favorites-guest-warning-triangle {
+  left: 75px;
+  border-bottom: 10px solid #FFC800;
+}
+
+prm-favorites-warning-message .favorites-guest-warning {
+  border: 2px solid #FFC800;
+}
+
+prm-favorites-warning-message .mobile-favorites-warning-message {
+  background-color: #FFC800;
+}
+
+prm-favorites-warning-message md-toast {
+  background-color: #FFC800;
+}
