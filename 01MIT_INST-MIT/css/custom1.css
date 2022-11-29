@@ -936,6 +936,41 @@ prm-topbar .isDeposit, prm-topbar .isServicePage, prm-topbar .isSummonOverAlma {
 prm-no-search-result > md-card {
   display:none;
 }
+/*  libchat styling */
+.lcs_slide_out header {transform: rotate(0deg) !important;}
+.lcs_slide_out header a {
+  font-weight: 600;
+  font-family: sans-serif;
+  text-decoration: none;
+  border-left: 1px solid black !important;
+  border-bottom: 1px solid black !important;
+  border-top: 1px solid black !important;
+  border-right: 0px !important;
+  box-shadow: none !important;
+  transform: translateX(-100%);
+  left:auto !important;
+}
+div.lcs_slide_out {
+  border: 0px;
+}
+.lcs_slide_out iframe {border: 1px solid black !important}
+
+
+.lcs_slide_out-r {
+  top: unset !important;
+  bottom: 0 !important;
+}
+
+.lcs_slide_out-r.open {
+  top: unset !important;
+  bottom: 0px !important;
+}
+
+@media all and (max-width: 599px) {
+  div.lcs_slide_out {
+    display: none;
+  }
+}
 
 /*------- Favorites Warning Message for Guests ------- */
 prm-favorites-warning-message .favorites-guest-warning-triangle {
