@@ -47,7 +47,7 @@
 /*----------below is the code for libchat-----------*/
                 // Adds the chat button
 (function() { // load libchat
-    var libchatHash = 'be5453260e1ad59f6468764ff9f5c11a'; // hash string goes inside quotation marks
+    var libchatHash = '1e8f3119e6cff530e0d23e2cb1f2b2a7'; // hash string goes inside quotation marks
     var div = document.createElement('div');
     div.id = 'libchat_' + libchatHash;
     document.getElementsByTagName('body')[0].appendChild(div);
