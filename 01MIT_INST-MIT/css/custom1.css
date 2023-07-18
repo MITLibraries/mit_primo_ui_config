@@ -22,7 +22,7 @@
 .light-on-dark-dialog .md-button.hovered:not([disabled]),
 .light-on-dark-dialog .md-button.md-focused:not([disabled]),
 .light-on-dark-dialog .md-button._md-focused:not([disabled]) {
-  color: #cc006d;
+  color: #333333;
   background-color: white;
 }
 
@@ -257,7 +257,7 @@ prm-user-area md-fab-toolbar ._md-fab-action-item .light-on-dark-dialog .md-butt
 prm-user-area md-fab-toolbar .md-fab-action-item .light-on-dark-dialog md-input-container:not(.disable-hover) .md-button._md-focused:not([disabled]),
 .light-on-dark-dialog prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container:not(.disable-hover) .md-button._md-focused:not([disabled]),
 prm-user-area md-fab-toolbar ._md-fab-action-item .light-on-dark-dialog md-input-container:not(.disable-hover) .md-button._md-focused:not([disabled]) {
-  color: #cc006d;
+  color: #333333;
   background-color: white;
 }
 
@@ -345,7 +345,7 @@ prm-user-area md-fab-toolbar ._md-fab-action-item .light-on-dark-dialog md-input
 .service-form-static-panel button.button-confirm .light-on-dark-dialog prm-icon+span._md-focused:not([disabled]),
 .light-on-dark-dialog .service-form-static-panel button.button-confirm prm-icon svg path._md-focused:not([disabled]),
 .service-form-static-panel button.button-confirm prm-icon svg .light-on-dark-dialog path._md-focused:not([disabled]) {
-  color: #cc006d;
+  color: #333333;
   background-color: white;
 }
 
@@ -371,7 +371,7 @@ prm-user-area md-fab-toolbar ._md-fab-action-item .light-on-dark-dialog md-input
 .md-button.button-prompt.hovered:not([disabled]),
 .md-button.button-prompt.md-focused:not([disabled]),
 .md-button.button-prompt._md-focused:not([disabled]) {
-  color: #cc006d;
+  color: #333333;
   background-color: white;
 }
 
@@ -466,7 +466,7 @@ md-grid-tile .section-title .tile-content>prm-icon.md-button._md-focused:not([di
 md-grid-tile .tile-content>.md-button.link-alt-color._md-focused:not([disabled]),
 .tiles-grid-tile .tile-content>.md-button.link-alt-color._md-focused:not([disabled]) {
   color: white;
-  background-color: #cc006d;
+  background-color: #333333;
 }
 
 .md-button.button-large {
@@ -612,7 +612,7 @@ prm-action-list>md-nav-bar .md-nav-item .md-button,
 .bar prm-authentication .md-button.md-focused:not([disabled]),
 .md-button.button-as-link._md-focused:not([disabled]),
 .bar prm-authentication .md-button._md-focused:not([disabled]) {
-  color: #cc006d;
+  color: #333333;
   background-color: white;
 }
 
@@ -716,7 +716,7 @@ prm-gallery-collection .collection-folder .item-actions ._md-focused.md-button:n
 .light-on-dark-dialog .md-button.button-as-link._md-focused:not([disabled]),
 .light-on-dark-dialog .bar prm-authentication .md-button._md-focused:not([disabled]),
 .bar prm-authentication .light-on-dark-dialog .md-button._md-focused:not([disabled]) {
-  color: #cc006d;
+  color: #333333;
   background-color: white;
 }
 
@@ -776,7 +776,7 @@ prm-gallery-collection .collection-folder .item-actions ._md-focused.md-button:n
 .light-on-dark-dialog .md-button.button-as-link-mobile.hovered:not([disabled]),
 .light-on-dark-dialog .md-button.button-as-link-mobile.md-focused:not([disabled]),
 .light-on-dark-dialog .md-button.button-as-link-mobile._md-focused:not([disabled]) {
-  color: #cc006d;
+  color: #333333;
   background-color: white;
 }
 
@@ -896,7 +896,7 @@ prm-add-query-to-saved-searches .custom-button,
 prm-pre-filters md-input-container.is-active,
 .md-autocomplete-suggestions .suggestion-scope,
 md-tab-content .tab-content-header md-input-container md-select-value .md-text {
-  color: #cc006d;
+  color: #333333;
 }
 
 .prm-primary-color.prm-hue1,
@@ -913,7 +913,7 @@ prm-pre-filters md-input-container.prm-hue1.is-active,
 md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item.md-active:not([disabled]),
 md-tabs md-tabs-wrapper md-tabs-canvas md-pagination-wrapper md-tab-item.md-focused:not([disabled]),
 md-tab-content .tab-content-header md-input-container md-select-value .prm-hue1.md-text {
-  color: #bd0065;
+  color: #2b2b2b;
 }
 
 .prm-primary-color.prm-hue2,
@@ -929,7 +929,7 @@ prm-add-query-to-saved-searches .prm-hue2.custom-button,
 prm-pre-filters md-input-container.prm-hue2.is-active,
 .md-autocomplete-suggestions .prm-hue2.suggestion-scope,
 md-tab-content .tab-content-header md-input-container md-select-value .prm-hue2.md-text {
-  color: #b3005f;
+  color: #262626;
 }
 
 .prm-primary-bg,
@@ -942,7 +942,7 @@ prm-newspapers-search-bar,
 prm-collection-gallery-header .collection-header-inner,
 prm-tree-nav prm-spinner .diamond {
   color: white;
-  background-color: #cc006d;
+  background-color: #333333;
 }
 
 .prm-primary-bg.prm-hue1,
@@ -956,7 +956,7 @@ prm-collection-gallery-header .prm-hue1.collection-header-inner,
 prm-tree-nav prm-spinner .prm-hue1.diamond,
 md-dialog-content md-input-container.dark-on-light:after,
 md-input-container:after {
-  background-color: #bd0065;
+  background-color: #2b2b2b;
 }
 
 .prm-primary-bg.prm-hue2,
@@ -969,7 +969,7 @@ prm-newspapers-search-bar.prm-hue2,
 prm-collection-gallery-header .prm-hue2.collection-header-inner,
 prm-tree-nav prm-spinner .prm-hue2.diamond,
 md-backdrop.md-opaque {
-  background-color: #b3005f;
+  background-color: #262626;
 }
 
 .prm-primary-bg.prm-hue3,
@@ -982,7 +982,7 @@ prm-tags-search-bar.prm-hue3,
 prm-newspapers-search-bar.prm-hue3,
 prm-collection-gallery-header .prm-hue3.collection-header-inner,
 prm-tree-nav prm-spinner .prm-hue3.diamond {
-  background-color: #a8005a;
+  background-color: #212121;
 }
 
 .prm-primary-bg.prm-hue3-important,
@@ -996,7 +996,7 @@ prm-tags-search-bar.prm-hue3-important,
 prm-newspapers-search-bar.prm-hue3-important,
 prm-collection-gallery-header .prm-hue3-important.collection-header-inner,
 prm-tree-nav prm-spinner .prm-hue3-important.diamond {
-  background-color: #a8005a !important;
+  background-color: #212121 !important;
 }
 
 .prm-primary-bg.prm-hue4,
@@ -1008,19 +1008,19 @@ prm-tags-search-bar.prm-hue4,
 prm-newspapers-search-bar.prm-hue4,
 prm-collection-gallery-header .prm-hue4.collection-header-inner,
 prm-tree-nav prm-spinner .prm-hue4.diamond {
-  background-color: #990052;
+  background-color: #1a1a1a;
 }
 
 .prm-primary-border {
-  border-color: #cc006d;
+  border-color: #333333;
 }
 
 .prm-primary-border.prm-hue1 {
-  border-color: #cc006d;
+  border-color: #333333;
 }
 
 .prm-primary-border.prm-hue2 {
-  border-color: #cc006d;
+  border-color: #333333;
 }
 
 .prm-secondary-color,
@@ -2810,7 +2810,7 @@ prm-search-result-list prm-personalize-results-button .md-button md-switch._md-c
 .prm-organization,
 prm-facet prm-organization-or-facet-toggle .md-button md-switch .md-label,
 prm-facet prm-organization-or-facet-toggle .md-button md-switch ._md-label {
-  color: #cc006d;
+  color: #333333;
 }
 
 .prm-organization-bg,
@@ -2818,7 +2818,7 @@ prm-facet prm-organization-or-facet-toggle .md-button md-switch .md-bar,
 prm-facet prm-organization-or-facet-toggle .md-button md-switch ._md-bar,
 prm-facet prm-organization-or-facet-toggle .md-button md-switch .md-thumb,
 prm-facet prm-organization-or-facet-toggle .md-button md-switch ._md-thumb {
-  background-color: #cc006d;
+  background-color: #333333;
 }
 
 .prm-dark {
