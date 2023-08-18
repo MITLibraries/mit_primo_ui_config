@@ -2987,3 +2987,15 @@ prm-favorites-warning-message .mobile-favorites-warning-message {
 prm-favorites-warning-message md-toast {
   background-color: #FFC800;
 }
+
+/*-------- Apply filter button ------------ */
+.multiselect-submit .multiselect-submit-inner .md-button.md-primary {
+  color: #FFFFFF;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
+/*---------Results list numbers --------------*/
+.list-item-count {
+  color: #000;
+}
